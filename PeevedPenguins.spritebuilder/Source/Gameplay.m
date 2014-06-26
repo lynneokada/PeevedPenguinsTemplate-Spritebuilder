@@ -95,7 +95,6 @@
     self.position = ccp(0, 0);
     CCActionFollow *follow = [CCActionFollow actionWithTarget:penguin worldBoundary:self.boundingBox];
     [_contentNode runAction:follow];
-    CCLOG(@"penguin launched");
 }
 
 - (void)retry {
@@ -114,7 +113,6 @@
         //release the joint and lets the catapult snap back
         [_mouseJoint invalidate];
         _mouseJoint = nil;
-        CCLOG(@"catapult released");
     }
 }
 
