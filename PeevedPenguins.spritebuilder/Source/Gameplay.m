@@ -13,6 +13,7 @@
     CCNode *_catapultArm;
     CCNode *_levelNode;
     CCNode *_contentNode;
+    CCNode *_pullbackNode;
 }
 
 - (void)didLoadFromCCB{
@@ -24,6 +25,9 @@
     
     //visualize physics bodies and joints
     _physicsNode.debugDraw = TRUE;
+    
+    //nothing shall collide with our invisible node
+    _pullbackNode.physicsBody.collisionMask = @[];
 }
 
 // called on every touch in this scene
