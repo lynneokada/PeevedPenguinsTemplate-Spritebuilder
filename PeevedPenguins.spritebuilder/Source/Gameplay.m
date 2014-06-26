@@ -46,6 +46,7 @@
         // setup a spring joint between the mouseJointNode and the catapultArm
         _mouseJoint = [CCPhysicsJoint connectedSpringJointWithBodyA:_mouseJointNode.physicsBody bodyB:_catapultArm.physicsBody anchorA:ccp(0, 0) anchorB:ccp(34, 138) restLength:0.f stiffness:3000.f damping:150.f];
     }
+    CCLOG(@"catapult dragged");
 }
 
 - (void)launchPenguin {
@@ -66,6 +67,7 @@
     self.position = ccp(0, 0);
     CCActionFollow *follow = [CCActionFollow actionWithTarget:penguin worldBoundary:self.boundingBox];
     [_contentNode runAction:follow];
+    CCLOG(@"penguin launched");
 }
 
 - (void)retry {
@@ -84,6 +86,7 @@
         //release the joint and lets the catapult snap back
         [_mouseJoint invalidate];
         _mouseJoint = nil;
+        CCLOG(@"catapult released");
     }
 }
 
