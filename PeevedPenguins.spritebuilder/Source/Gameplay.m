@@ -72,8 +72,8 @@
     [[CCDirector sharedDirector] replaceScene:[CCBReader loadAsScene:@"Gameplay"]];
 }
 
-- (void)touchMoved:(UItouch *)touch withEvent:(UIEvent *)event {
-    //whenever touches move, update the position of the mouseJointNode to the touch
+- (void)touchMoved:(UITouch *)touch withEvent:(UIEvent *)event {
+    // whenever touches move, update the position of the mouseJointNode to the touch position
     CGPoint touchLocation = [touch locationInNode:_contentNode];
     _mouseJointNode.position = touchLocation;
 }
@@ -94,5 +94,6 @@
 - (void)touchCancelled:(UITouch *)touch withEvent:(UIEvent *)event {
     //when touches are cancelled, meaning the user drags their finger off the screen or onto something else, release the catapult
     [self releaseCatapult];
+
 }
 @end
