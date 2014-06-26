@@ -31,6 +31,7 @@
     //nothing shall collide with our invisible node
     _pullbackNode.physicsBody.collisionMask = @[];
     _mouseJointNode.physicsBody.collisionMask = @[];
+    CCLOG(@"program started");
 }
 
 // called on every touch in this scene
