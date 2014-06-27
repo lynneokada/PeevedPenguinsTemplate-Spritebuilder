@@ -20,10 +20,11 @@
     Penguin *_currentPenguin;
     CCPhysicsJoint *_penguinCatapultJoint;
     CCPhysicsJoint *_mouseJoint;
-    
     CCAction *_followPenguin;
 }
+
 static const float MIN_SPEED = 5.f;
+
 - (void)didLoadFromCCB{
     //tell this scene to accept touches
     self.userInteractionEnabled = TRUE;
