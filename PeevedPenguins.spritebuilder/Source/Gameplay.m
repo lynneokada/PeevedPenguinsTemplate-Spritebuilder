@@ -15,7 +15,7 @@
     CCNode *_catapultArm;
     CCNode *_levelNode;
     CCNode *_contentNode;
-    //CCNode *_pullbackNode;
+    CCNode *_pullbackNode;
     CCNode *_mouseJointNode;
     Penguin *_currentPenguin;
     CCPhysicsJoint *_penguinCatapultJoint;
@@ -78,7 +78,7 @@ static const float MIN_SPEED = 5.f;
     penguin.position = ccpAdd(_catapultArm.position, ccp(16,50));
     
     //add the penguin to the physicsNode of this scene (because it has physics enabled)
-    [_physicsNode addChild:penguin];
+    //[_physicsNode addChild:penguin];
     
     //manually create & apply a force to launch penguin
     CGPoint launchDirection = ccp(1,0);
