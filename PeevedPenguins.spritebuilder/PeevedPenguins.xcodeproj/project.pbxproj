@@ -39,6 +39,7 @@
 		D2867B19195B5274005742F6 /* Penguin.m in Sources */ = {isa = PBXBuildFile; fileRef = D2867B18195B5274005742F6 /* Penguin.m */; };
 		D2867B1D195B5283005742F6 /* Seal.m in Sources */ = {isa = PBXBuildFile; fileRef = D2867B1C195B5283005742F6 /* Seal.m */; };
 		D2867B25195BFDF4005742F6 /* Gameplay.m in Sources */ = {isa = PBXBuildFile; fileRef = D2867B24195BFDF4005742F6 /* Gameplay.m */; };
+		D2867B28195D3B90005742F6 /* WaitingPenguin.m in Sources */ = {isa = PBXBuildFile; fileRef = D2867B27195D3B90005742F6 /* WaitingPenguin.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +100,8 @@
 		D2867B1C195B5283005742F6 /* Seal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Seal.m; sourceTree = "<group>"; };
 		D2867B23195BFDF4005742F6 /* Gameplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Gameplay.h; path = Source/Gameplay.h; sourceTree = "<group>"; };
 		D2867B24195BFDF4005742F6 /* Gameplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Gameplay.m; path = Source/Gameplay.m; sourceTree = "<group>"; };
+		D2867B26195D3B90005742F6 /* WaitingPenguin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WaitingPenguin.h; path = Source/WaitingPenguin.h; sourceTree = "<group>"; };
+		D2867B27195D3B90005742F6 /* WaitingPenguin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WaitingPenguin.m; path = Source/WaitingPenguin.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +147,8 @@
 				B7378993180767190076A88C /* MainScene.m */,
 				D2867B23195BFDF4005742F6 /* Gameplay.h */,
 				D2867B24195BFDF4005742F6 /* Gameplay.m */,
+				D2867B26195D3B90005742F6 /* WaitingPenguin.h */,
+				D2867B27195D3B90005742F6 /* WaitingPenguin.m */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -357,6 +362,7 @@
 			files = (
 				D2867B1D195B5283005742F6 /* Seal.m in Sources */,
 				B737893F1807617C0076A88C /* AppDelegate.m in Sources */,
+				D2867B28195D3B90005742F6 /* WaitingPenguin.m in Sources */,
 				B7378994180767190076A88C /* MainScene.m in Sources */,
 				D2867B19195B5274005742F6 /* Penguin.m in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
